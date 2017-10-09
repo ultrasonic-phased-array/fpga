@@ -1,0 +1,520 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jul 15 20:23:02 2017
+# Process ID: 11894
+# Current directory: /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2
+# Command line: vivado -log z_turn_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source z_turn_wrapper.tcl -notrace
+# Log file: /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper.vdi
+# Journal file: /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source z_turn_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/ip_repo/ultrasonicAXItoPWM_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/ip_repo/ultrasonicPWMgenerator_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/ip_repo/ultrasonicShiftControl_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/ip_repo/myPasedArray_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/ledvideo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/ip_repo/deconcat_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/ip_repo/myI2StoPWM_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/niklas/zturn-stuff/Vivado/tmp/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/zturn-doc/vivado-library/ip/axi_i2s_adi_1.2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/zturn-stuff/sdsoc/zturn-7z020/ip_repo/ultrasonic_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.1/data/ip'.
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 106 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/z_turn_processing_system7_0_0.xdc] for cell 'z_turn_i/ps7/inst'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/z_turn_processing_system7_0_0.xdc] for cell 'z_turn_i/ps7/inst'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_0_0/z_turn_clk_wiz_0_0_board.xdc] for cell 'z_turn_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_0_0/z_turn_clk_wiz_0_0_board.xdc] for cell 'z_turn_i/clk_wiz_0/inst'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_0_0/z_turn_clk_wiz_0_0.xdc] for cell 'z_turn_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_0_0/z_turn_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_0_0/z_turn_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1982.062 ; gain = 540.523 ; free physical = 17758 ; free virtual = 40114
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_0_0/z_turn_clk_wiz_0_0.xdc] for cell 'z_turn_i/clk_wiz_0/inst'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_1_0/z_turn_clk_wiz_1_0_board.xdc] for cell 'z_turn_i/clk_wiz_1/inst'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_1_0/z_turn_clk_wiz_1_0_board.xdc] for cell 'z_turn_i/clk_wiz_1/inst'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_1_0/z_turn_clk_wiz_1_0.xdc] for cell 'z_turn_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_1_0/z_turn_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_clk_wiz_1_0/z_turn_clk_wiz_1_0.xdc] for cell 'z_turn_i/clk_wiz_1/inst'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.srcs/constrs_1/new/system.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
+
+link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1983.074 ; gain = 893.434 ; free physical = 17788 ; free virtual = 40134
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2047.094 ; gain = 64.020 ; free physical = 17778 ; free virtual = 40125
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1c5de6ed5
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17780 ; free virtual = 40127
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 163 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 26c885334
+
+Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17778 ; free virtual = 40124
+INFO: [Opt 31-389] Phase Constant propagation created 20 cells and removed 196 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1ef266908
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17777 ; free virtual = 40124
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 611 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1ef266908
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.96 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17777 ; free virtual = 40124
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1ef266908
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.97 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17777 ; free virtual = 40124
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17777 ; free virtual = 40124
+Ending Logic Optimization Task | Checksum: 1ef266908
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17777 ; free virtual = 40124
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1c98d5c6c
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17778 ; free virtual = 40124
+35 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2047.094 ; gain = 0.000 ; free physical = 17774 ; free virtual = 40123
+INFO: [Common 17-1381] The checkpoint '/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper_opt.dcp' has been generated.
+Command: report_drc -file z_turn_wrapper_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2066.094 ; gain = 0.000 ; free physical = 17741 ; free virtual = 40088
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1c6196949
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2066.094 ; gain = 0.000 ; free physical = 17741 ; free virtual = 40088
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2066.094 ; gain = 0.000 ; free physical = 17744 ; free virtual = 40092
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b85d8d6c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2066.094 ; gain = 0.000 ; free physical = 17735 ; free virtual = 40083
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1fa2e5760
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2073.121 ; gain = 7.027 ; free physical = 17721 ; free virtual = 40068
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1fa2e5760
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2073.121 ; gain = 7.027 ; free physical = 17721 ; free virtual = 40068
+Phase 1 Placer Initialization | Checksum: 1fa2e5760
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2073.121 ; gain = 7.027 ; free physical = 17721 ; free virtual = 40068
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1a5b5166b
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17714 ; free virtual = 40061
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1a5b5166b
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17714 ; free virtual = 40061
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 22a9ce521
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17713 ; free virtual = 40061
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 20992ce9c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17713 ; free virtual = 40061
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 20992ce9c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17713 ; free virtual = 40061
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 236cacb94
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17713 ; free virtual = 40061
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1b9fc53ee
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17710 ; free virtual = 40057
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 1eac4d931
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17704 ; free virtual = 40052
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 192e96e5e
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17704 ; free virtual = 40052
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 192e96e5e
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17704 ; free virtual = 40052
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 23eff3658
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17704 ; free virtual = 40051
+Phase 3 Detail Placement | Checksum: 23eff3658
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17704 ; free virtual = 40051
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1a372ee20
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 46-38] Processed net z_turn_i/ultrasonicAXItoPWM_0/inst/p_0_in, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-41] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1a372ee20
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17706 ; free virtual = 40054
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.337. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1995bdc05
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17684 ; free virtual = 40032
+Phase 4.1 Post Commit Optimization | Checksum: 1995bdc05
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17684 ; free virtual = 40032
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1995bdc05
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17684 ; free virtual = 40032
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1995bdc05
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17684 ; free virtual = 40032
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1c6d07c42
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17684 ; free virtual = 40032
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c6d07c42
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17684 ; free virtual = 40032
+Ending Placer Task | Checksum: 10a57284b
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17698 ; free virtual = 40045
+55 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 2129.148 ; gain = 63.055 ; free physical = 17698 ; free virtual = 40045
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2129.148 ; gain = 0.000 ; free physical = 17688 ; free virtual = 40043
+INFO: [Common 17-1381] The checkpoint '/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2129.148 ; gain = 0.000 ; free physical = 17685 ; free virtual = 40035
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2129.148 ; gain = 0.000 ; free physical = 17692 ; free virtual = 40041
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2129.148 ; gain = 0.000 ; free physical = 17690 ; free virtual = 40039
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg400'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 7ebf60c4 ConstDB: 0 ShapeSum: 8b97c787 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: fd7ac6fe
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2199.793 ; gain = 70.645 ; free physical = 17600 ; free virtual = 39949
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: fd7ac6fe
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2199.793 ; gain = 70.645 ; free physical = 17600 ; free virtual = 39949
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: fd7ac6fe
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2199.793 ; gain = 70.645 ; free physical = 17568 ; free virtual = 39918
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: fd7ac6fe
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2199.793 ; gain = 70.645 ; free physical = 17568 ; free virtual = 39918
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1fe6746d3
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2209.836 ; gain = 80.688 ; free physical = 17541 ; free virtual = 39891
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.186 | TNS=-12.295| WHS=-1.649 | THS=-22.686|
+
+Phase 2 Router Initialization | Checksum: 1ce968a19
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2209.836 ; gain = 80.688 ; free physical = 17539 ; free virtual = 39888
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: d6441321
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2285.820 ; gain = 156.672 ; free physical = 17534 ; free virtual = 39883
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 419
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.224 | TNS=-31.105| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 17327fa11
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:46 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17364 ; free virtual = 39713
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.326 | TNS=-32.019| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 193b85f51
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17365 ; free virtual = 39714
+Phase 4 Rip-up And Reroute | Checksum: 193b85f51
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17365 ; free virtual = 39714
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 150bcad7f
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:46 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17363 ; free virtual = 39712
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.224 | TNS=-26.369| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: c24453a6
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:46 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17362 ; free virtual = 39711
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: c24453a6
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:46 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17362 ; free virtual = 39711
+Phase 5 Delay and Skew Optimization | Checksum: c24453a6
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:46 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17362 ; free virtual = 39710
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 145a14ec8
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17358 ; free virtual = 39707
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.224 | TNS=-26.369| WHS=-0.004 | THS=-0.004 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1abb2fde8
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17355 ; free virtual = 39704
+WARNING: [Route 35-468] The router encountered 10 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	z_turn_i/axi_i2s_adi_0/U0/pl330_dma_tx_gen.tx_fifo/state[0]_i_2/I4
+	z_turn_i/axi_i2s_adi_0/U0/pl330_dma_tx_gen.tx_fifo/state[0]_i_1/I1
+	z_turn_i/axi_i2s_adi_0/U0/pl330_dma_tx_gen.tx_fifo/state[1]_i_1/I1
+	z_turn_i/axi_i2s_adi_0/U0/pl330_dma_tx_gen.tx_fifo/state[0]_i_1/I2
+	z_turn_i/axi_i2s_adi_0/U0/pl330_dma_tx_gen.tx_fifo/state[1]_i_1/I2
+	z_turn_i/axi_i2s_adi_0/U0/ctrl/tick_reg/R
+	z_turn_i/axi_i2s_adi_0/U0/pl330_dma_tx_gen.tx_fifo/state[0]_i_3/I1
+	z_turn_i/axi_i2s_adi_0/U0/pl330_dma_tx_gen.tx_fifo/state[0]_i_4/I3
+	z_turn_i/axi_i2s_adi_0/U0/ctrl/tx_sync/BCLK_O[0]_i_1/I0
+	z_turn_i/axi_i2s_adi_0/U0/ctrl/tick_d1_reg/D
+
+Phase 6 Post Hold Fix | Checksum: 1af5fefd4
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17354 ; free virtual = 39703
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.920058 %
+  Global Horizontal Routing Utilization  = 1.19033 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 36.036%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 39.6396%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 48.5294%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 39.7059%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 23a77a077
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17350 ; free virtual = 39699
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 23a77a077
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17349 ; free virtual = 39698
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 27e0e02dc
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17351 ; free virtual = 39699
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 20ab746d5
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17352 ; free virtual = 39701
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-6.224 | TNS=-26.369| WHS=0.051  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 20ab746d5
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17352 ; free virtual = 39701
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:47 . Memory (MB): peak = 2300.820 ; gain = 171.672 ; free physical = 17406 ; free virtual = 39755
+
+Routing Is Done.
+68 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:38 ; elapsed = 00:00:49 . Memory (MB): peak = 2301.098 ; gain = 171.949 ; free physical = 17405 ; free virtual = 39754
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2324.957 ; gain = 0.000 ; free physical = 17394 ; free virtual = 39753
+INFO: [Common 17-1381] The checkpoint '/home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper_routed.dcp' has been generated.
+Command: report_drc -file z_turn_wrapper_drc_routed.rpt -pb z_turn_wrapper_drc_routed.pb -rpx z_turn_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file z_turn_wrapper_methodology_drc_routed.rpt -rpx z_turn_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file z_turn_wrapper_power_routed.rpt -pb z_turn_wrapper_power_summary_routed.pb -rpx z_turn_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+75 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 15 20:24:39 2017...

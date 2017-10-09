@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Jun 27 17:29:21 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="c7334a81bb11465c9828106a7d2283ae" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddBusInterfaceHandler" value="2" type="JavaHandler"/>
+<property name="AutoInferInterfaceHandler" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="EditConstraintSets" value="1" type="JavaHandler"/>
+<property name="EditInIPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="EditProperties" value="1" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="3" type="JavaHandler"/>
+<property name="UpgradeIP" value="1" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="AbstractSearchablePanel_SHOW_SEARCH" value="2" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="6" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="4" type="GuiResourceData"/>
+<property name="BaseReportTab_RERUN" value="1" type="GuiResourceData"/>
+<property name="EditInterfaceDialog_TABBED_PANE" value="1" type="GuiResourceData"/>
+<property name="FileGroupFacetTable_FILE_GROUP_FACET_TABLE" value="19" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="87" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="2" type="GuiResourceData"/>
+<property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="20" type="GuiResourceData"/>
+<property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="1" type="GuiResourceData"/>
+<property name="IdentificationContentPanel_VERSION" value="1" type="GuiResourceData"/>
+<property name="InterfaceConfigurationPanel_MODE" value="1" type="GuiResourceData"/>
+<property name="InterfaceConfigurationPanel_NAME" value="2" type="GuiResourceData"/>
+<property name="InterfaceDefinitionChooser_INTERFACE_DEFINITION_CHOOSER" value="1" type="GuiResourceData"/>
+<property name="InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE" value="11" type="GuiResourceData"/>
+<property name="MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT" value="3" type="GuiResourceData"/>
+<property name="PACommandNames_EDIT_CONSTRAINT_SETS" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_EDIT_IN_IP_PACKAGER" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_GOTO_NETLIST_DESIGN" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_PACKAGER_ADD_BUS_INTERFACE" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_PACKAGER_AUTO_INFER_INTERFACE" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_RUN_SYNTHESIS" value="1" type="GuiResourceData"/>
+<property name="PackagerStepsPanel_PACKAGER_STEPS_LIST" value="12" type="GuiResourceData"/>
+<property name="PortAndInterfaceContentPanel_REFRESH" value="6" type="GuiResourceData"/>
+<property name="PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE" value="9" type="GuiResourceData"/>
+<property name="RDICommands_PROPERTIES" value="1" type="GuiResourceData"/>
+<property name="SaveProjectUtils_CANCEL" value="1" type="GuiResourceData"/>
+<property name="SaveProjectUtils_SAVE" value="2" type="GuiResourceData"/>
+<property name="SelectMenu_HIGHLIGHT" value="1" type="GuiResourceData"/>
+<property name="SrcMenu_OPEN_SELECTED_SOURCE_FILES" value="2" type="GuiResourceData"/>
+<property name="SystemBuilderMenu_IP_DOCUMENTATION" value="1" type="GuiResourceData"/>
+<property name="TaskBanner_CLOSE" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="39" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="31" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

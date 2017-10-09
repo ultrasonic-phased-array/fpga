@@ -1,0 +1,16 @@
+
+*** Running vivado
+    with args -log z_turn_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source z_turn_wrapper.tcl -notrace
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source z_turn_wrapper.tcl -notrace
+ERROR: [Project 1-682] Sub-design 'z_turn.bd' is not generated for Synthesis target. Please open this sub-design and generate with synth_checkpoint_mode as 'Singular' in original project before adding it to current project.
+CRITICAL WARNING: [Vivado 12-1464] The source file '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/z_turn.bd' cannot be added to the fileset 'sources_1'.
+ERROR: [Common 17-39] 'add_files' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 19:43:37 2017...

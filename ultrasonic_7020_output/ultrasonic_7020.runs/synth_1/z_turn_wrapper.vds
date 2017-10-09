@@ -1,0 +1,907 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Jun 14 19:42:49 2017
+# Process ID: 15816
+# Current directory: /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1
+# Command line: vivado -log z_turn_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source z_turn_wrapper.tcl
+# Log file: /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/z_turn_wrapper.vds
+# Journal file: /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source z_turn_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/niklas/zturn-stuff/Vivado/tmp/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/niklas/xilinx/zturn-stuff/sdsoc/zturn-7z020/ip_repo/ultrasonic_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'z_turn.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+z_turn_util_vector_logic_1_0
+z_turn_util_vector_logic_0_1
+z_turn_util_vector_logic_0_0
+z_turn_proc_sys_reset_3_0
+z_turn_ps_7_axi_periph_0
+z_turn_rst_ps_7_166M_0
+z_turn_proc_sys_reset_1_0
+z_turn_ps_7_axi_periph_1
+z_turn_processing_system7_0_0
+z_turn_proc_sys_reset1_0
+
+Command: synth_design -top z_turn_wrapper -part xc7z020clg400-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/z_turn.bd
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/z_turn.bd
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15826 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.426 ; gain = 71.992 ; free physical = 257 ; free virtual = 38348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'z_turn_wrapper' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:17657]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:17657]
+INFO: [Synth 8-638] synthesizing module 'z_turn' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:571]
+INFO: [Synth 8-638] synthesizing module 'GND' [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-256] done synthesizing module 'GND' (2#1) [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-638] synthesizing module 'VCC' [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:45038]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (3#1) [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:45038]
+INFO: [Synth 8-638] synthesizing module 'z_turn_proc_sys_reset_3_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/synth/z_turn_proc_sys_reset_3_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/synth/z_turn_proc_sys_reset_3_0.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:199]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:138]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:43657' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:43657]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (4#1) [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:43657]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/lib_cdc_v1_0/ea79928f/hdl/src/vhdl/cdc_sync.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element loop_and_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:397]
+WARNING: [Synth 8-6014] Unused sequential element loop_nand_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:398]
+WARNING: [Synth 8-6014] Unused sequential element aux_loop_and_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:430]
+WARNING: [Synth 8-6014] Unused sequential element aux_loop_nand_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:431]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (6#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/lpf.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'sequence' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (7#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence' (8#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (9#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_proc_sys_reset_3_0' (10#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/synth/z_turn_proc_sys_reset_3_0.vhd:74]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'z_turn_proc_sys_reset_3_0' requires 10 connections, but only 5 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:816]
+INFO: [Synth 8-638] synthesizing module 'z_turn_rst_ps_7_166M_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/synth/z_turn_rst_ps_7_166M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/synth/z_turn_rst_ps_7_166M_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_rst_ps_7_166M_0' (11#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/synth/z_turn_rst_ps_7_166M_0.vhd:74]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_1' of module 'z_turn_rst_ps_7_166M_0' requires 10 connections, but only 7 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:822]
+INFO: [Synth 8-638] synthesizing module 'z_turn_proc_sys_reset1_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/synth/z_turn_proc_sys_reset1_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/synth/z_turn_proc_sys_reset1_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_proc_sys_reset1_0' (12#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/synth/z_turn_proc_sys_reset1_0.vhd:74]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_2' of module 'z_turn_proc_sys_reset1_0' requires 10 connections, but only 7 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:830]
+INFO: [Synth 8-638] synthesizing module 'z_turn_proc_sys_reset_1_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/synth/z_turn_proc_sys_reset_1_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/synth/z_turn_proc_sys_reset_1_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_proc_sys_reset_1_0' (13#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/synth/z_turn_proc_sys_reset_1_0.vhd:74]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_3' of module 'z_turn_proc_sys_reset_1_0' requires 10 connections, but only 5 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:838]
+INFO: [Synth 8-638] synthesizing module 'z_turn_processing_system7_0_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/synth/z_turn_processing_system7_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
+	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
+	Parameter C_M_AXI_GP0_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP0_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_GP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_GP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP2_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP3_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_ACP_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_S_AXI_HP0_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP1_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP2_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP3_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_ACP_TRANS_CHECK bound to: 0 - type: integer 
+	Parameter C_NUM_F2P_INTR_INPUTS bound to: 16 - type: integer 
+	Parameter C_FCLK_CLK0_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK1_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK2_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK3_BUF bound to: true - type: string 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
+	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
+	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
+	Parameter USE_TRACE_DATA_EDGE_DETECTOR bound to: 0 - type: integer 
+	Parameter C_TRACE_PIPELINE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PS7_SI_REV bound to: PRODUCTION - type: string 
+	Parameter C_EN_EMIO_ENET0 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_ENET1 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_TRACE bound to: 0 - type: integer 
+	Parameter C_DQ_WIDTH bound to: 32 - type: integer 
+	Parameter C_DQS_WIDTH bound to: 4 - type: integer 
+	Parameter C_DM_WIDTH bound to: 4 - type: integer 
+	Parameter C_MIO_PRIMITIVE bound to: 54 - type: integer 
+	Parameter C_PACKAGE_NAME bound to: clg400 - type: string 
+	Parameter C_IRQ_F2P_MODE bound to: DIRECT - type: string 
+	Parameter C_TRACE_INTERNAL_WIDTH bound to: 2 - type: integer 
+	Parameter C_EN_EMIO_PJTAG bound to: 0 - type: integer 
+	Parameter C_USE_AXI_NONSECURE bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP0 bound to: 1 - type: integer 
+	Parameter C_USE_S_AXI_HP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP2 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP3 bound to: 0 - type: integer 
+	Parameter C_USE_M_AXI_GP0 bound to: 1 - type: integer 
+	Parameter C_USE_M_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP0 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1350]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1351]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (14#1) [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (15#1) [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:33527]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (16#1) [/opt/Xilinx/Vivado/2017.1/scripts/rt/data/unisim_comp.v:33527]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (17#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/synth/z_turn_processing_system7_0_0.v:523]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_processing_system7_0_0' (18#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/synth/z_turn_processing_system7_0_0.v:57]
+WARNING: [Synth 8-350] instance 'ps7' of module 'z_turn_processing_system7_0_0' requires 136 connections, but only 118 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:844]
+INFO: [Synth 8-638] synthesizing module 'z_turn_util_vector_logic_0_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_0_0/synth/z_turn_util_vector_logic_0_0.vhd:66]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_0_0/synth/z_turn_util_vector_logic_0_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'util_vector_logic' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:88]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'util_vector_logic' (19#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_util_vector_logic_0_0' (20#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_0_0/synth/z_turn_util_vector_logic_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'z_turn_util_vector_logic_0_1' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_0_1/synth/z_turn_util_vector_logic_0_1.vhd:66]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_0_1/synth/z_turn_util_vector_logic_0_1.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_util_vector_logic_0_1' (21#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_0_1/synth/z_turn_util_vector_logic_0_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'z_turn_util_vector_logic_1_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_1_0/synth/z_turn_util_vector_logic_1_0.vhd:66]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/util_vector_logic_v2_0/5ac42227/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_1_0/synth/z_turn_util_vector_logic_1_0.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_util_vector_logic_1_0' (22#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_util_vector_logic_1_0/synth/z_turn_util_vector_logic_1_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'z_turn_xlconcat_0_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_0_0/synth/z_turn_xlconcat_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (23#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_xlconcat_0_0' (24#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_0_0/synth/z_turn_xlconcat_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'z_turn_xlconcat_0_1' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_0_1/synth/z_turn_xlconcat_0_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 32 - type: integer 
+	Parameter IN1_WIDTH bound to: 32 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 64 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized0' (24#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_xlconcat_0_1' (25#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_0_1/synth/z_turn_xlconcat_0_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'z_turn_xlconcat_0_2' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_0_2/synth/z_turn_xlconcat_0_2.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized1' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized1' (25#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_xlconcat_0_2' (26#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_0_2/synth/z_turn_xlconcat_0_2.v:57]
+INFO: [Synth 8-638] synthesizing module 'z_turn_xlconcat_1_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_1_0/synth/z_turn_xlconcat_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized2' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 4 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 29 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized2' (26#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_xlconcat_1_0' (27#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_xlconcat_1_0/synth/z_turn_xlconcat_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'z_turn_ps_7_axi_periph_0' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:1189]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_QSJACF' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:291]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_QSJACF' (28#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:291]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_ps_7_axi_periph_0' (29#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:1189]
+WARNING: [Synth 8-350] instance 'z_turn_ps_7_axi_periph_0' of module 'z_turn_ps_7_axi_periph_0' requires 82 connections, but only 55 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:1059]
+INFO: [Synth 8-638] synthesizing module 'z_turn_ps_7_axi_periph_1' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:1599]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1N0XG9' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:12]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1N0XG9' (30#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:12]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_ps_7_axi_periph_1' (31#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:1599]
+WARNING: [Synth 8-350] instance 'z_turn_ps_7_axi_periph_1' of module 'z_turn_ps_7_axi_periph_1' requires 82 connections, but only 71 given [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:1115]
+WARNING: [Synth 8-3848] Net BP in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:623]
+WARNING: [Synth 8-3848] Net I2S_DOUT in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:647]
+WARNING: [Synth 8-3848] Net I2S_FSYNC_OUT in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:649]
+WARNING: [Synth 8-3848] Net I2S_SCLK in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:650]
+WARNING: [Synth 8-3848] Net LCD_DATA in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:666]
+WARNING: [Synth 8-3848] Net LCD_DE in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:667]
+WARNING: [Synth 8-3848] Net LCD_HSYNC in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:668]
+WARNING: [Synth 8-3848] Net LCD_PCLK in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:669]
+WARNING: [Synth 8-3848] Net LCD_VSYNC in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:670]
+WARNING: [Synth 8-3848] Net LEDS in module/entity z_turn does not have driver. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:671]
+INFO: [Synth 8-256] done synthesizing module 'z_turn' (32#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn.v:571]
+INFO: [Synth 8-256] done synthesizing module 'z_turn_wrapper' (33#1) [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/hdl/z_turn_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1N0XG9 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1N0XG9 has unconnected port M_ARESETN[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1N0XG9 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1N0XG9 has unconnected port S_ARESETN[0]
+WARNING: [Synth 8-3331] design z_turn_ps_7_axi_periph_1 has unconnected port ACLK
+WARNING: [Synth 8-3331] design z_turn_ps_7_axi_periph_1 has unconnected port ARESETN[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_QSJACF has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_QSJACF has unconnected port M_ARESETN[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_QSJACF has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_QSJACF has unconnected port S_ARESETN[0]
+WARNING: [Synth 8-3331] design z_turn_ps_7_axi_periph_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design z_turn_ps_7_axi_periph_0 has unconnected port ARESETN[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized2 has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized2 has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized2 has unconnected port In31[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In31[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design util_vector_logic has unconnected port Op2[0]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_DV
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_ER
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[7]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[6]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[5]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[4]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[3]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[1]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[0]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_COL
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_CRS
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RX_DV
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RX_ER
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[7]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[6]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[5]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[4]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[3]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[1]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[0]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP0_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP0_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP1_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP1_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_ACP_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_ACP_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP0_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP0_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP1_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP1_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP2_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP2_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP3_ACLK
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP3_ARSIZE[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1211.926 ; gain = 113.492 ; free physical = 342 ; free virtual = 38385
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1211.926 ; gain = 113.492 ; free physical = 342 ; free virtual = 38386
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/z_turn_processing_system7_0_0.xdc] for cell 'z_turn_i/ps7/inst'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/z_turn_processing_system7_0_0.xdc] for cell 'z_turn_i/ps7/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_processing_system7_0_0/z_turn_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/z_turn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/z_turn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_rst_ps_7_166M_0/z_turn_rst_ps_7_166M_0.xdc] for cell 'z_turn_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset1_0/z_turn_proc_sys_reset1_0.xdc] for cell 'z_turn_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_1_0/z_turn_proc_sys_reset_1_0.xdc] for cell 'z_turn_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0_board.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/bd/z_turn/ip/z_turn_proc_sys_reset_3_0/z_turn_proc_sys_reset_3_0.xdc] for cell 'z_turn_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/z_turn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/z_turn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==z_turn_ultrasonic_0_0 || ORIG_REF_NAME==z_turn_ultrasonic_0_0}'. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==z_turn_clk_wiz_0_0 || ORIG_REF_NAME==z_turn_clk_wiz_0_0}'. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==z_turn_xlconcat_3_0 || ORIG_REF_NAME==z_turn_xlconcat_3_0}'. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/z_turn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/z_turn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 54 instances were transformed.
+  FDR => FDRE: 48 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  SRL16 => SRL16E: 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1534.582 ; gain = 0.000 ; free physical = 257 ; free virtual = 38125
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1534.582 ; gain = 436.148 ; free physical = 360 ; free virtual = 38228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1534.582 ; gain = 436.148 ; free physical = 360 ; free virtual = 38228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for z_turn_i/ps7/inst. (constraint file  /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc, line 61).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_1/U0. (constraint file  /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc, line 64).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_2/U0. (constraint file  /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc, line 72).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_3/U0. (constraint file  /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc, line 80).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_0/U0. (constraint file  /home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/dont_touch.xdc, line 88).
+Applied set_property DONT_TOUCH = true for z_turn_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/proc_sys_reset_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/ps7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/util_vector_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/util_vector_logic_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/xlconcat_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/xlconcat_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/z_turn_ps_7_axi_periph_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for z_turn_i/z_turn_ps_7_axi_periph_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1534.582 ; gain = 436.148 ; free physical = 358 ; free virtual = 38225
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:138]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:222]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1534.582 ; gain = 436.148 ; free physical = 347 ; free virtual = 38214
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	                6 Bit    Registers := 4     
+	                3 Bit    Registers := 12    
+	                1 Bit    Registers := 52    
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lpf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sequence 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
+Module proc_sys_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:138]
+WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:138]
+WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:138]
+WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/upcnt_n.vhd:138]
+INFO: [Synth 8-3886] merging instance 'proc_sys_reset:/SEQ/pr_dec_reg[1]' (FD) to 'proc_sys_reset:/SEQ/bsr_dec_reg[1]'
+INFO: [Synth 8-3886] merging instance 'proc_sys_reset:/SEQ/bsr_dec_reg[1]' (FD) to 'proc_sys_reset:/SEQ/core_dec_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1534.582 ; gain = 436.148 ; free physical = 338 ; free virtual = 38205
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1684.566 ; gain = 586.133 ; free physical = 270 ; free virtual = 37920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1704.574 ; gain = 606.141 ; free physical = 257 ; free virtual = 37907
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 269 ; free virtual = 37911
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop SEQ/seq_clr_reg is being inverted and renamed to SEQ/seq_clr_reg_inv.
+INFO: [Synth 8-5365] Flop SEQ/seq_clr_reg is being inverted and renamed to SEQ/seq_clr_reg_inv.
+INFO: [Synth 8-5365] Flop SEQ/seq_clr_reg is being inverted and renamed to SEQ/seq_clr_reg_inv.
+INFO: [Synth 8-5365] Flop SEQ/seq_clr_reg is being inverted and renamed to SEQ/seq_clr_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 266 ; free virtual = 37908
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 266 ; free virtual = 37908
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 266 ; free virtual = 37908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 266 ; free virtual = 37908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 266 ; free virtual = 37908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 266 ; free virtual = 37908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BIBUF |   130|
+|2     |BUFG  |     4|
+|3     |LUT1  |   131|
+|4     |LUT2  |    32|
+|5     |LUT3  |     8|
+|6     |LUT4  |    24|
+|7     |LUT5  |    12|
+|8     |LUT6  |     4|
+|9     |PS7   |     1|
+|10    |SRL16 |     4|
+|11    |FDR   |    32|
+|12    |FDRE  |   116|
+|13    |FDSE  |    12|
+|14    |IBUF  |    71|
+|15    |IOBUF |     2|
+|16    |OBUFT |    27|
++------+------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+-------------------------------------------+------+
+|      |Instance                              |Module                                     |Cells |
++------+--------------------------------------+-------------------------------------------+------+
+|1     |top                                   |                                           |   610|
+|2     |  z_turn_i                            |z_turn                                     |   510|
+|3     |    proc_sys_reset_0                  |z_turn_proc_sys_reset_3_0                  |    65|
+|4     |      U0                              |proc_sys_reset__1                          |    65|
+|5     |        EXT_LPF                       |lpf_11                                     |    23|
+|6     |          \ACTIVE_LOW_AUX.ACT_LO_AUX  |cdc_sync_14                                |     6|
+|7     |          \ACTIVE_LOW_EXT.ACT_LO_EXT  |cdc_sync_15                                |     6|
+|8     |        SEQ                           |sequence_12                                |    37|
+|9     |          SEQ_COUNTER                 |upcnt_n_13                                 |    12|
+|10    |    proc_sys_reset_1                  |z_turn_rst_ps_7_166M_0                     |    65|
+|11    |      U0                              |proc_sys_reset__2                          |    65|
+|12    |        EXT_LPF                       |lpf_6                                      |    23|
+|13    |          \ACTIVE_LOW_AUX.ACT_LO_AUX  |cdc_sync_9                                 |     6|
+|14    |          \ACTIVE_LOW_EXT.ACT_LO_EXT  |cdc_sync_10                                |     6|
+|15    |        SEQ                           |sequence_7                                 |    37|
+|16    |          SEQ_COUNTER                 |upcnt_n_8                                  |    12|
+|17    |    proc_sys_reset_2                  |z_turn_proc_sys_reset1_0                   |    65|
+|18    |      U0                              |proc_sys_reset__3                          |    65|
+|19    |        EXT_LPF                       |lpf_1                                      |    23|
+|20    |          \ACTIVE_LOW_AUX.ACT_LO_AUX  |cdc_sync_4                                 |     6|
+|21    |          \ACTIVE_LOW_EXT.ACT_LO_EXT  |cdc_sync_5                                 |     6|
+|22    |        SEQ                           |sequence_2                                 |    37|
+|23    |          SEQ_COUNTER                 |upcnt_n_3                                  |    12|
+|24    |    proc_sys_reset_3                  |z_turn_proc_sys_reset_1_0                  |    65|
+|25    |      U0                              |proc_sys_reset                             |    65|
+|26    |        EXT_LPF                       |lpf                                        |    23|
+|27    |          \ACTIVE_LOW_AUX.ACT_LO_AUX  |cdc_sync                                   |     6|
+|28    |          \ACTIVE_LOW_EXT.ACT_LO_EXT  |cdc_sync_0                                 |     6|
+|29    |        SEQ                           |sequence                                   |    37|
+|30    |          SEQ_COUNTER                 |upcnt_n                                    |    12|
+|31    |    ps7                               |z_turn_processing_system7_0_0              |   247|
+|32    |      inst                            |processing_system7_v5_5_processing_system7 |   247|
+|33    |    util_vector_logic_0               |z_turn_util_vector_logic_0_0               |     1|
+|34    |    util_vector_logic_1               |z_turn_util_vector_logic_0_1               |     1|
+|35    |    util_vector_logic_2               |z_turn_util_vector_logic_1_0               |     1|
+|36    |    xlconcat                          |z_turn_xlconcat_0_0                        |     0|
+|37    |    xlconcat_0                        |z_turn_xlconcat_0_1                        |     0|
+|38    |    xlconcat_1                        |z_turn_xlconcat_0_2                        |     0|
+|39    |    xlconcat_2                        |z_turn_xlconcat_1_0                        |     0|
+|40    |    z_turn_ps_7_axi_periph_0          |z_turn_ps_7_axi_periph_0                   |     0|
+|41    |    z_turn_ps_7_axi_periph_1          |z_turn_ps_7_axi_periph_1                   |     0|
++------+--------------------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.590 ; gain = 622.156 ; free physical = 266 ; free virtual = 37908
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 194 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1720.590 ; gain = 299.500 ; free physical = 322 ; free virtual = 37965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1720.598 ; gain = 622.156 ; free physical = 324 ; free virtual = 37966
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  FDR => FDRE: 32 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  SRL16 => SRL16E: 4 instances
+
+114 Infos, 139 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1752.605 ; gain = 666.762 ; free physical = 431 ; free virtual = 38073
+INFO: [Common 17-1381] The checkpoint '/home/niklas/xilinx/ultrasonic_7020/ultrasonic_7020.runs/synth_1/z_turn_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1776.617 ; gain = 0.000 ; free physical = 432 ; free virtual = 38075
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 19:43:22 2017...

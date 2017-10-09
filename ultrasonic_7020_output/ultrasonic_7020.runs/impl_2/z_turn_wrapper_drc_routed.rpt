@@ -1,0 +1,41 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
+| Date         : Sun Oct  8 12:54:38 2017
+| Host         : niklas-precision running 64-bit Ubuntu 16.04.3 LTS
+| Command      : report_drc -file z_turn_wrapper_drc_routed.rpt -pb z_turn_wrapper_drc_routed.pb -rpx z_turn_wrapper_drc_routed.rpx
+| Design       : z_turn_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+-------------------------------------------------+------------+
+| Rule   | Severity | Description                                     | Violations |
++--------+----------+-------------------------------------------------+------------+
+| CKLD-1 | Warning  | Clock Net has non-BUF driver and too many loads | 1          |
++--------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CKLD-1#1 Warning
+Clock Net has non-BUF driver and too many loads  
+Clock net z_turn_i/ultrasonicAXItoPWM_0/inst/counter_reg[7] is not driven by a Clock Buffer and has more than 512 loads. Driver(s): z_turn_i/ultrasonicAXItoPWM_0/inst/counter_reg[7]/Q
+Related violations: <none>
+
+

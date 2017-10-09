@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Jul 30 00:37:09 2017
+# Process ID: 13417
+# Current directory: /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2
+# Command line: vivado -log z_turn_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source z_turn_wrapper.tcl -notrace
+# Log file: /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/z_turn_wrapper.vdi
+# Journal file: /home/niklas/xilinx/ultrasonic_7020_output/ultrasonic_7020.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source z_turn_wrapper.tcl -notrace
